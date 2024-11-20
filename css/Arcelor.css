@@ -1,0 +1,103 @@
+body {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2f2f2f, #1a1a1a); /* მუქი ნაცრისფერი ფონები */
+    color: #d4cfcf; /* რბილი ღია ნაცრისფერი ტექსტი */
+    line-height: 1.8;
+}
+
+.hero-page {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.9); /* ღრმა შავი ფონია */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* მსუბუქი შავი ჩრდილები */
+    border: 1px solid #8b0000; /* კაშკაშა მუქი წითელი საზღვარი */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #8b0000; /* კაშკაშა მუქი წითელი */
+    text-shadow: 2px 2px 8px rgba(139, 0, 0, 0.5); /* რბილი ჩრდილი */
+}
+
+.hero-video {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hero-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #8b0000; /* კაშკაშა მუქი წითელი საზღვარი */
+    box-shadow: 0 6px 12px rgba(139, 0, 0, 0.6);
+}
+
+.hero-info, .hero-abilities, .hero-powers {
+    margin-bottom: 15px;
+    background: rgba(40, 40, 40, 0.95); /* მუქი ნაცრისფერი ფონები */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #8b0000; /* კაშკაშა მუქი წითელი საზღვარი */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #8b0000; /* კაშკაშა მუქი წითელი */
+    text-shadow: 1px 1px 5px rgba(139, 0, 0, 0.6);
+}
+
+p, ul {
+    font-size: 0.9rem;
+    color: #d4cfcf; /* რბილი ღია ნაცრისფერი */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding: 6px;
+    background: #2f2f2f; /* მუქი ნაცრისფერი ფონია */
+    border-radius: 5px;
+    color: #e1d1d1; /* მსუბუქი ნაცრისფერი ტექსტი */
+    border-left: 4px solid #8b0000; /* კაშკაშა მუქი წითელი ჩარჩო */
+}
+
+b {
+    color: #e0a39d; /* ღრმა წითელი ბolder */
+}
+
+/* iPhone SE Specific Media Query */
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-video video {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p, ul li {
+        font-size: 0.85rem;
+    }
+
+    .hero-info, .hero-abilities, .hero-powers {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
